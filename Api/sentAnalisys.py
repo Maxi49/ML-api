@@ -1,11 +1,9 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from pydantic import BaseModel
 from machine_learning_model import preferences_vector_multiplication
-import requests
 from PIL import Image
 from io import BytesIO
-from pyxios import Pyxios
-from typing import Any, Dict
+from typing import Dict
 import json
 import aiohttp
 

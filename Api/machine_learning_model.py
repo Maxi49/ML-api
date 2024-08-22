@@ -63,7 +63,7 @@ def preferences_vector_multiplication(desc_text: str, img: str):
     text_vector_classification = description_text_classifier_result['scores']
 
     # ! Devolvemos el orden del vector segun el array de tags original
-    image_sorted_vector = sort_scores(unordered_tags=image_unordered_tags_classification , sorted_tags= image_tags, vector= image_vector_classification)
+    image_sorted_vector = sort_scores(unordered_tags= image_unordered_tags_classification , sorted_tags= image_tags, vector= image_vector_classification)
     text_sorted_vector = sort_scores(unordered_tags= text_unordered_tags_classification, sorted_tags= text_tags, vector= text_vector_classification)
 
     multiplied_scores = np.multiply(image_sorted_vector, text_sorted_vector)
